@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Authored by: Juho Hämäläinen <juho.hamalainen@jolla.com>
+ * Authored by: Juho H?m?l?inen <juho.hamalainen@jolla.com>
  */
 
 #include "audioflingerglue.h"
@@ -23,7 +23,7 @@
 #include <stdlib.h>
 #include <hybris/common/binding.h>
 
-HYBRIS_LIBRARY_INITIALIZE(audioflingerglue, "/usr/libexec/droid-hybris/system/lib/libaudioflingerglue.so");
+HYBRIS_LIBRARY_INITIALIZE(audioflingerglue, "/usr/libexec/droid-hybris/system/@TARGET_LIB_ARCH@/libaudioflingerglue.so");
 
 HYBRIS_IMPLEMENT_FUNCTION2(audioflingerglue, DroidAfGlue*, droid_afglue_connect, DroidAfGlueCallbacks*, void*);
 HYBRIS_IMPLEMENT_VOID_FUNCTION1(audioflingerglue, droid_afglue_disconnect, DroidAfGlue*);
